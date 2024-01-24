@@ -1,0 +1,19 @@
+{
+	"Title" : "KirkaOS",
+	"Author" : "Kirkarr",
+	"Version" : 1,
+	"files" : [
+		{
+			"Name" : "startup.lua",
+			"Url" : ""
+		},
+		{
+			"Name" : "updater.lua",
+			"Url" : ""
+		}
+	],
+	"Changelog" : [
+		"Created OS:)",
+		"Added config.json"
+	]
+}
