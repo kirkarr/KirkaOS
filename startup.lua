@@ -26,7 +26,25 @@ if not fs.exists("os/config.json") then
 				req.close()
 				file.close()
 			end
-			sleep(3)
+			sleep(1)
+		end
+		fs.makeDir("os/programms")
+		for i=1,#data["Programms"] do
+			filedata = data["Programms"][i]
+			term.clear()
+			term.setCursorPos(1,1)
+			term.write("Loading default programms")
+			term.setCursorPos(1,2)
+			term.write("Loading "..filedata["Name"])
+			if filedata["Url"] ~= "" then
+				file = fs.open(filedata["Url"],"w+")
+				req = http.get(filedata["Url"])
+				code = req.readAll()
+				req.close()
+				file.write(code)
+				file.close()
+			end
+			sleep(1)
 		end
 		local cfg = fs.open("os/data.json","w+")
 		cfg.write(serializeJSON(data))
