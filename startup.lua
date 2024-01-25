@@ -38,6 +38,10 @@ if not fs.exists("os/config.json") then
 		term.write("Cannot load OS")
 		term.setCursorPos(1,2)
 		term.write("Reason: "..reason)
+		term.setCursorPos(1,3)
+		term.write("Using craftOS")
+		sleep(3)
+		term.clear()
 	end
 else
 	os.run("os/main.lua")
