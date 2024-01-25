@@ -5,11 +5,11 @@
 	"files" : [
 		{
 			"Name" : "startup.lua",
-			"Url" : ""
+			"Url" : "https://raw.githubusercontent.com/kirkarr/KirkaOS/main/startup.lua"
 		},
 		{
 			"Name" : "main.lua",
-			"Url" : ""
+			"Url" : "https://raw.githubusercontent.com/kirkarr/KirkaOS/main/main.lua"
 		}
 	],
 	"Changelog" : [
